@@ -13,6 +13,9 @@
 		690741052C83566800BE6096 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690741042C83566800BE6096 /* CoreDataManager.swift */; };
 		690741092C835A2900BE6096 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690741082C835A2900BE6096 /* NetworkService.swift */; };
 		6907410B2C835A9700BE6096 /* ToDosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6907410A2C835A9700BE6096 /* ToDosModel.swift */; };
+		6907410E2C8360AE00BE6096 /* ToDoTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6907410D2C8360AE00BE6096 /* ToDoTableviewCell.swift */; };
+		690741102C83610E00BE6096 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6907410F2C83610E00BE6096 /* ToDoTableViewController.swift */; };
+		690741122C83617100BE6096 /* ToDomanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690741112C83617100BE6096 /* ToDomanager.swift */; };
 		698AD7882C83268A004A0A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD7872C83268A004A0A95 /* AppDelegate.swift */; };
 		698AD78A2C83268A004A0A95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD7892C83268A004A0A95 /* SceneDelegate.swift */; };
 		698AD7942C83268B004A0A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698AD7932C83268B004A0A95 /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 		690741042C83566800BE6096 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		690741082C835A2900BE6096 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6907410A2C835A9700BE6096 /* ToDosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosModel.swift; sourceTree = "<group>"; };
+		6907410D2C8360AE00BE6096 /* ToDoTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableviewCell.swift; sourceTree = "<group>"; };
+		6907410F2C83610E00BE6096 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		690741112C83617100BE6096 /* ToDomanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDomanager.swift; sourceTree = "<group>"; };
 		698AD7842C83268A004A0A95 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		698AD7872C83268A004A0A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		698AD7892C83268A004A0A95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +70,15 @@
 			path = NetworkStack;
 			sourceTree = "<group>";
 		};
+		6907410C2C835BA500BE6096 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6907410D2C8360AE00BE6096 /* ToDoTableviewCell.swift */,
+				6907410F2C83610E00BE6096 /* ToDoTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		698AD77B2C83268A004A0A95 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +98,9 @@
 		698AD7862C83268A004A0A95 /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				6907410C2C835BA500BE6096 /* View */,
 				698AD7872C83268A004A0A95 /* AppDelegate.swift */,
+				690741112C83617100BE6096 /* ToDomanager.swift */,
 				698AD7892C83268A004A0A95 /* SceneDelegate.swift */,
 				698AD7932C83268B004A0A95 /* Assets.xcassets */,
 				698AD7952C83268B004A0A95 /* LaunchScreen.storyboard */,
@@ -167,12 +184,15 @@
 			files = (
 				690741052C83566800BE6096 /* CoreDataManager.swift in Sources */,
 				690741022C83559D00BE6096 /* ToDoItem+CoreDataClass.swift in Sources */,
+				690741122C83617100BE6096 /* ToDomanager.swift in Sources */,
 				690741032C83559D00BE6096 /* ToDoItem+CoreDataProperties.swift in Sources */,
 				698AD7882C83268A004A0A95 /* AppDelegate.swift in Sources */,
 				690740FF2C8354D300BE6096 /* ToDo.xcdatamodeld in Sources */,
 				6907410B2C835A9700BE6096 /* ToDosModel.swift in Sources */,
 				698AD78A2C83268A004A0A95 /* SceneDelegate.swift in Sources */,
+				6907410E2C8360AE00BE6096 /* ToDoTableviewCell.swift in Sources */,
 				690741092C835A2900BE6096 /* NetworkService.swift in Sources */,
+				690741102C83610E00BE6096 /* ToDoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
