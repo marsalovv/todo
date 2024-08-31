@@ -138,26 +138,26 @@ class CoreDataManager {
         }
     }
     
-//    func saveLoadToDos(_ todos: [ToDoModel], completion: @escaping (Error?) -> Void) {
-//        let backgroundContext = self.newBackgroundContext()
-//        backgroundContext.perform {
-//            for todo in todos {
-//                let newToDoItem = ToDoItem(context: backgroundContext)
-//                newToDoItem.id = todo.id
-//                newToDoItem.userId = todo.userId
-//                newToDoItem.toDo = todo.todo
-//                newToDoItem.toDoDescription = ""
-//                newToDoItem.isCompleted = todo.completed
-//                newToDoItem.date = Date()
-//            }
-//            
-//            do {
-//                try backgroundContext.save()
-//                completion(nil)
-//            } catch {
-//                completion(error)
-//            }
-//        }
-//    }
+    func saveLoadToDos(_ todos: [ToDoModel], completion: @escaping (Error?) -> Void) {
+        let backgroundContext = self.newBackgroundContext()
+        backgroundContext.perform {
+            for todo in todos {
+                let newToDoItem = ToDoItem(context: backgroundContext)
+                newToDoItem.id = todo.id
+                newToDoItem.userId = todo.userId
+                newToDoItem.toDo = todo.todo
+                newToDoItem.toDoDescription = ""
+                newToDoItem.isCompleted = todo.completed
+                newToDoItem.date = Date()
+            }
+            
+            do {
+                try backgroundContext.save()
+                completion(nil)
+            } catch {
+                completion(error)
+            }
+        }
+    }
     
 }
