@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690740FF2C8354D300BE6096 /* ToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 690740FD2C8354D300BE6096 /* ToDo.xcdatamodeld */; };
+		690741022C83559D00BE6096 /* ToDoItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690741002C83559D00BE6096 /* ToDoItem+CoreDataClass.swift */; };
+		690741032C83559D00BE6096 /* ToDoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690741012C83559D00BE6096 /* ToDoItem+CoreDataProperties.swift */; };
+		690741052C83566800BE6096 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690741042C83566800BE6096 /* CoreDataManager.swift */; };
 		698AD7882C83268A004A0A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD7872C83268A004A0A95 /* AppDelegate.swift */; };
 		698AD78A2C83268A004A0A95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD7892C83268A004A0A95 /* SceneDelegate.swift */; };
-		698AD7922C83268A004A0A95 /* ToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 698AD7902C83268A004A0A95 /* ToDo.xcdatamodeld */; };
 		698AD7942C83268B004A0A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698AD7932C83268B004A0A95 /* Assets.xcassets */; };
 		698AD7972C83268B004A0A95 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 698AD7962C83268B004A0A95 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		690740FE2C8354D300BE6096 /* ToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDo.xcdatamodel; sourceTree = "<group>"; };
+		690741002C83559D00BE6096 /* ToDoItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		690741012C83559D00BE6096 /* ToDoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		690741042C83566800BE6096 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		698AD7842C83268A004A0A95 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		698AD7872C83268A004A0A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		698AD7892C83268A004A0A95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		698AD7912C83268A004A0A95 /* ToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDo.xcdatamodel; sourceTree = "<group>"; };
 		698AD7932C83268B004A0A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		698AD7962C83268B004A0A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		698AD7982C83268B004A0A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		690741062C83585C00BE6096 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				690741042C83566800BE6096 /* CoreDataManager.swift */,
+				690741002C83559D00BE6096 /* ToDoItem+CoreDataClass.swift */,
+				690741012C83559D00BE6096 /* ToDoItem+CoreDataProperties.swift */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
 		698AD77B2C83268A004A0A95 = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +75,8 @@
 				698AD7932C83268B004A0A95 /* Assets.xcassets */,
 				698AD7952C83268B004A0A95 /* LaunchScreen.storyboard */,
 				698AD7982C83268B004A0A95 /* Info.plist */,
-				698AD7902C83268A004A0A95 /* ToDo.xcdatamodeld */,
+				690741062C83585C00BE6096 /* CoreDataStack */,
+				690740FD2C8354D300BE6096 /* ToDo.xcdatamodeld */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -134,9 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				690741052C83566800BE6096 /* CoreDataManager.swift in Sources */,
+				690741022C83559D00BE6096 /* ToDoItem+CoreDataClass.swift in Sources */,
+				690741032C83559D00BE6096 /* ToDoItem+CoreDataProperties.swift in Sources */,
 				698AD7882C83268A004A0A95 /* AppDelegate.swift in Sources */,
+				690740FF2C8354D300BE6096 /* ToDo.xcdatamodeld in Sources */,
 				698AD78A2C83268A004A0A95 /* SceneDelegate.swift in Sources */,
-				698AD7922C83268A004A0A95 /* ToDo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +307,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,13 +373,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		698AD7902C83268A004A0A95 /* ToDo.xcdatamodeld */ = {
+		690740FD2C8354D300BE6096 /* ToDo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				698AD7912C83268A004A0A95 /* ToDo.xcdatamodel */,
+				690740FE2C8354D300BE6096 /* ToDo.xcdatamodel */,
 			);
-			currentVersion = 698AD7912C83268A004A0A95 /* ToDo.xcdatamodel */;
-			path = ToDo.xcdatamodeld;
+			currentVersion = 690740FE2C8354D300BE6096 /* ToDo.xcdatamodel */;
+			name = ToDo.xcdatamodeld;
+			path = "/Users/marsalovv/Desktop/Тестовое до 30.08/чистовик/ToDo/ToDo/ToDo.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
