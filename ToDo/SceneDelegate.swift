@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navToDoTVC = UINavigationController(rootViewController: tvc)
         
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = toDoTVC
+        window?.rootViewController = navToDoTVC
         window?.makeKeyAndVisible()
     }
     
