@@ -99,7 +99,6 @@ class ToDoTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(fetchedResultsController.fetchedObjects?.count)
         return fetchedResultsController.fetchedObjects?.count ?? 0
     }
     
